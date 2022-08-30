@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+      "**/*.aux": true, 
+      "**/*.css": true,
+      "**/*.json": true,
+      "node_modules": true
+    }
+  }

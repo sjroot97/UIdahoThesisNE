@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"dottedtocline"
+		],
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#ddc061",
+			"activityBar.activeBorder": "#1c836b",
+			"activityBar.background": "#ddc061",
+			"activityBar.foreground": "#15202b",
+			"activityBar.inactiveForeground": "#15202b99",
+			"activityBarBadge.background": "#1c836b",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"statusBar.background": "#d4af37",
+			"statusBar.foreground": "#15202b",
+			"statusBarItem.hoverBackground": "#b29126",
+			"titleBar.activeBackground": "#d4af37",
+			"titleBar.activeForeground": "#15202b",
+			"titleBar.inactiveBackground": "#d4af3799",
+			"titleBar.inactiveForeground": "#15202b99"
+		},
+		"peacock.color": "#D4AF37"
+	}
+}
