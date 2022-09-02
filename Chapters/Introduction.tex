@@ -2,7 +2,7 @@
 \label{Chapter:Introduction}
 
 \section{Background}
-The \acf{msnb} is a self contained design \cite{CarterPHD,PetersonMS}... 
+The \acf{msnb} is a self contained design for a liquid fueled molten salt microreactor \cite{CarterPHD,PetersonMS}. It is fueled by an inorganic form of uranium, \UF, dissolved in a coolant salt such as \flinak (a eutectic mixture of three alkali fluorides) or \flibe  (a mixture of $LiF$ and $BeF_2$) \cite{RoperOverview}. Heat is generated in the core by fission, is transported by the natural circulation of the coolant/fuel salt, and rejected to a secondary working fluid in an integrated heat exchanger. Criticality is manipulated using axial control drums, which may be rotated to aim either a neutron reflecting material or a neutron absorbing material towards the core.
 
 \subsection{Micro Reactors}
 Its like a reactor but smol. This is a test from CAES.
@@ -12,4 +12,9 @@ Its like a reactor but smol. This is a test from CAES.
 
 
 \section{Scope}
-Until now, little to no work has been done on the control system... 
+As a developing design, work has been done on neutronics \cite{PetersonMS}, thermal-hydraulics and autonomous load following \cite{CarterPHD}, and corrosion concerns \cite{RoperPHD}. However, until now, little to no work has been done on the control system. First and foremost, this work details a multiphysics characterization of the \acs{msnb} required to design a feedback controller capable of matching the core power generation to the secondary power demand. In addition to the main control mode of following power transients during normal operation, specific discussion is centered around more dynamic time periods, namely: 
+\begin{enumerate*}[label=\arabic*)]
+    \item initial start-up;
+    \item shutdown, both planned and emergency; and
+    \item restart;
+\end{enumerate*}

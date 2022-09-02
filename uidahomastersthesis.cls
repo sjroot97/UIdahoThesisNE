@@ -248,6 +248,10 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\U}[1][]{$^{#1}U$ }
 \newcommand{\Pu}[1][239]{$^{#1}Pu$ }
 
+\newcommand{\UF}[1][4]{$UF_{#1}$}
+\newcommand{\flinak}{$FLiNaK$ }
+\newcommand{\flibe}{$FLiBe$ }
+
 %Acronyms
 \newcommand{\acf}{\acrfull} %full acronym
 \newcommand{\acl}{\acrlong} %long acronym
