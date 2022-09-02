@@ -263,5 +263,11 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 %Acronyms
 \newacronym{pid}{PID}{Proportional-Integral-Derivative}
 \newacronym{msnb}{MSNB}{Molten Salt Nuclear Battery}
+\newacronym{msr}{MSR}{Molten Salt Reactor}
 \newacronym{lwr}{LWR}{Light Water Reactor}
+\newacronym{smr}{SMR}{Small Modular Reactor}
 \newacronym{nrc}{NRC}{Nuclear Regulatory Commission}
+\newacronym{ans}{ANS}{American Nuclear Society}
+\newacronym{inl}{INL}{Idaho National Laboratory}
+\newacronym{nrel}{NREL}{National Renewable Energy Laboratory}
+\newacronym{oak}{ORNL}{Oak Ridge National Laboratory}
