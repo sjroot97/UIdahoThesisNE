@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 \contentsline {code}{\numberline {1}{\ignorespaces Hello!\relax }}{8}{code.1}%
 \contentsline {code}{\numberline {2}{\ignorespaces F strings\relax }}{8}{code.2}%
+=======
+\contentsline {code}{\numberline {1}{\ignorespaces Hello!\relax }}{12}{code.1}%
+\contentsline {code}{\numberline {2}{\ignorespaces F strings\relax }}{12}{code.2}%
+>>>>>>> 53c0c9b58ec274c7452eb1380832198d8d4bdade
