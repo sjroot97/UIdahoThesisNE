@@ -262,6 +262,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 
 %Acronyms
 \newacronym{pid}{PID}{Proportional-Integral-Derivative}
+\newacronym{npp}{NPP}{Nuclear Power Plant}
 \newacronym{msnb}{MSNB}{Molten Salt Nuclear Battery}
 \newacronym{msr}{MSR}{Molten Salt Reactor}
 \newacronym{msre}{MSRE}{Molten Salt Reactor Experiment}
