@@ -264,6 +264,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{pid}{PID}{Proportional-Integral-Derivative}
 \newacronym{msnb}{MSNB}{Molten Salt Nuclear Battery}
 \newacronym{msr}{MSR}{Molten Salt Reactor}
+\newacronym{msre}{MSRE}{Molten Salt Reactor Experiment}
 \newacronym{lwr}{LWR}{Light Water Reactor}
 \newacronym{smr}{SMR}{Small Modular Reactor}
 \newacronym{nrc}{NRC}{Nuclear Regulatory Commission}
