@@ -1,32 +1,36 @@
-\documentclass[12pt]{UIdahoMastersThesis}
+%This Thesis Template, assembled by Sam Root, is heavily based off of the one created by Chistopher Goes, available at. https://www.uidaho.edu/-/media/UIdaho-Responsive/Files/cogs/Thesis-and-Dissertation-Resources/ThesisTemplate.tex?la=en&hash=5667028A20C90A1764561B515E4BD57DE0D0D803
+%I edited this one, which was designed for a Computer Science thesis, to work better for an Engineering thesis.
+%Chris also credits Matthew Brown, Cara Leatherman, and Chris Zeoli
+
+\documentclass[12pt]{UIdahoMastersThesis} %This tells the compiler to design the document based off of the file uidahomastersthesis.cls in this working directory. 
 \makeatletter
 
 \usepackage[latin1]{inputenc}
-\makenoidxglossaries
+\makenoidxglossaries 
 
 %Preamble
-\usepackage{tikz}
+\usepackage{tikz} %This package allows you to make drawings - see https://www.youtube.com/watch?v=bQugbYq0BVA
 \usetikzlibrary{positioning}
 
-\graphicspath{ {./img/} }
+\graphicspath{ {./img/} } %tells the compiler to look for images in the /img folder nested in this working directory. If your \img folder is in an adjacent working directory, change it to {../img/}
 
-\usepackage[PetersLenny]{fncychap} %This makes the chapter titles fancy: If you don't want it fancy, delete this line and the chapter title formatting under the \frontmatter below
+\usepackage[PetersLenny]{fncychap} %This makes the chapter titles fancy: If you don't want it fancy, delete this line and uncomment the chapter title formatting under the \frontmatter below
 	\ChNameVar{\LARGE\scshape}
 	\ChTitleVar{\Huge\scshape}
 
-%Make post-it notes!
+%Make post-it notes! You can make more of these if you want different colors for different purposes
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \newcommandx{\note}[2][1=]{\todo[linecolor=orange,backgroundcolor=yellow!25,bordercolor=orange,#1]{#2}}
 
 % --------------------------------------------------------------------------
 % Thesis Information
-\title{Design of a \acs{pid} Controller for a Molten Salt Microreactor}
-\author{Sam J. Root}
+\title{An Incredibly Cool Thesis}
+\author{Joe I. Vandal}
 \thesisdegree{Master of Science}
 \major{Nuclear Engineering}
-\advisor{Michael McKellar, Ph.D.}
-\cmone{Dakota Roberson, Ph.D.}
-\cmtwo{Robert A. Borrelli, Ph.D.}
+\advisor{Major Professor, Ph.D.}
+\cmone{Committee Member, Ph.D.}
+\cmtwo{Committee Member, Ph.D.}
 \deptadmin{Indrajit Charit, Ph.D.}
 \graddate{May, 2023}
 % -------------------------------------------------------------------------
@@ -42,10 +46,10 @@
 
 % Configure the PDF output (Most of this is optional, it just adds metadata to the PDF)
 \usepackage[% pdftex
-pdfauthor=Sam J. Root,
-pdftitle=MsNB Control System,
-pdfsubject={Controls},
-pdfkeywords={Molten Salt Reactor;Molten Salt Nuclear Battery;Microreactor;Process Control},
+pdfauthor=\author,
+pdftitle=PDF Title,
+pdfsubject={Subject},
+pdfkeywords={keywords,keyword,key,word},
 pdfproducer={ShareLatex},  % e.g ShareLatex
 pdfcreator={pdflatex},
 pdfprintscaling={AppDefault}]{hyperref}
@@ -89,15 +93,15 @@ pdfprintscaling={AppDefault}]{hyperref}
 
 % -- Abstract --
 \frontmattersection{Abstract}
-\include{Preface/Abstract}
+\include{Preface/Abstract} %Template pulls in Abstract.tex from the Preface subdirectory
 
 % -- Acknowledgements --
  \frontmattersection{Acknowledgements}
-\include{Preface/Acknowledgements}
+\include{Preface/Acknowledgements}%Template pulls in Acknowledgements.tex from the Preface subdirectory
 
 % -- Dedication --
  \frontmattersection{Dedication}
- \include{Preface/Dedication}
+ \include{Preface/Dedication}%Template pulls in Dedication.tex from the Preface subdirectory
 
 % ------------------------------------------------------------
 % -- Table of Contents --
@@ -132,31 +136,25 @@ pdfprintscaling={AppDefault}]{hyperref}
 
 % ------------------------------------------------------------
 % -- Introduction --
-\include{Chapters/Introduction}
+\include{Chapters/Introduction}%Template pulls in Introduction.tex from the Chapters subdirectory
 
-% -- Process Control Engineering --
-\include{Chapters/Controls}
+% -- Background --
+\include{Chapters/Background} %Template pulls in Background.tex from the Chapters subdirectory
 
-% -- Reactor Characterization --
-\include{Chapters/Modeling}
+% --Results and Discussion --
+\include{Chapters/Results} %Template pulls in Results.tex from the Chapters subdirectory
 
-% -- Controller Design --
-\include{Chapters/Design}
-
-% -- Reactor Characterization --
-\include{Chapters/Results}
-
-% -- Reactor Characterization --
-\include{Chapters/Conclusions}
+% -- Conclusions --
+\include{Chapters/Conclusions} %Template pulls in Conclusions.tex from the Chapters subdirectory
 
 % ------------------------------------------------------------
 % -- References -- 
 
 \clearpage
 \renewcommand\bibname{References}
-\addcontentsline{toc}{chapter}{\textsc{\bibname}}
-\bibliographystyle{nsf}
-\bibliography{References.bib}
+\addcontentsline{toc}{chapter}{\textsc{\bibname}}%Changes 'Bibliography' to 'References' per UIdaho Thesis styling requirements
+\bibliographystyle{nsf} %Uses nsf.bst for formatting
+\bibliography{References.bib} %Tells BibTex to look for sources in the file in the braces.
 
 % ------------------------------------------------------------
 % -- Appendices --
@@ -164,8 +162,7 @@ pdfprintscaling={AppDefault}]{hyperref}
 \appendix % Marks start of appendices
 
 %Test
-\input{Appendix/Test}
-\input{Appendix/What}
+\input{Appendix/Codes}%Template pulls in Codes.tex from the Appendix subdirectory
 
 \end{document}
 
