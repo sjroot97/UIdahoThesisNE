@@ -32,6 +32,7 @@
 \RequirePackage{gensymb}
 \RequirePackage{url}
 \RequirePackage{mypythonhighlight} %My custom package for including python code
+\RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
 \RequirePackage[inline]{enumitem}%allows numbered and bulleted lists
 \RequirePackage{xargs}
