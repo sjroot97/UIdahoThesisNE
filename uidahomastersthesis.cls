@@ -35,6 +35,8 @@
 \RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
 \RequirePackage[inline]{enumitem}%allows numbered and bulleted lists
+\setlist[enumerate]{label=\arabic*)} %Default label for numbered lists
+\setlist[itemize]{label=\textbullet} %Default label for bulleted lists
 \RequirePackage{xargs}
 \RequirePackage{verbatim}
 
