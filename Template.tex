@@ -46,7 +46,7 @@
 
 % Configure the PDF output (Most of this is optional, it just adds metadata to the PDF)
 \hypersetup{% pdftex
-pdfauthor=\author,
+pdfauthor={Joe I. Vandal},
 pdftitle=PDF Title,
 pdfsubject={Subject},
 pdfkeywords={keywords,keyword,key,word},
@@ -71,6 +71,18 @@ pdfprintscaling={AppDefault}}
 
 % ------------------------------------------------------------
 % ------------------------------------------------------------
+
+%Adding "Eqn." before the equation number
+\renewcommand{\theequation}{Eqn. \thechapter.\arabic{equation}}
+%Adding new equation environment for reactions
+\newcounter{chemequation}
+\renewcommand*\thechemequation{Rxn. \thechapter.\arabic{chemequation}}
+\newenvironment{reaction}{%
+\stepcounter{chemequation}%
+\begin{equation}}%
+{\tag*{\thechemequation}%
+\end{equation}}
+
 % ------------------------------------------------------------
 \begin{document}
 

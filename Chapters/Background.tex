@@ -1,13 +1,13 @@
 \chapter{Background}
 \label{Chapter:Background}
 
-You're probably gonna need to do some math. You can do inline equations like $a^2+b^2=c^2$ by wrapping with dollar signs. Especially useful for inline equations is \verb=\nicefrac=, which is a package loaded, and does diagonal fractions instead of vertical. This can keep inline equations looking nice and uncramped. $K.E. = \nicefrac{mv^2}{2}.$ instead of $K.E. = \frac{1}{2}mv^2.$ You will also want separate equations like Equation \ref{einstein}.
+You're probably gonna need to do some math. You can do inline equations like $a^2+b^2=c^2$ by wrapping with dollar signs. Especially useful for inline equations is \verb=\nicefrac=, which is a package loaded, and does diagonal fractions instead of vertical. This can keep inline equations looking nice and uncramped. $K.E. = \nicefrac{mv^2}{2}.$ instead of $K.E. = \frac{1}{2}mv^2.$ You will also want separate equations like \ref{einstein}.
 
 \begin{equation}\label{einstein}
     e=mc^2
 \end{equation}
 
-Curly braces are used in equation \ref{exp} for multi character sub/superscripts. It also shows how to use greek characters. There are a ton of other features for \LaTeX \; equations that you can find with Google.
+Curly braces are used in \ref{exp} for multi character sub/superscripts. It also shows how to use greek characters. There are a ton of other features for \LaTeX \; equations that you can find with Google.
 
 \begin{equation}\label{exp}
     -1 = e^{i\pi} 
@@ -15,4 +15,12 @@ Curly braces are used in equation \ref{exp} for multi character sub/superscripts
 
 Referencing equation numbers using \verb=\ref{label}= is handy because it updates the number if the numbering changes \eg you add another equations.
 
+In addition to mathematical equations, you may also want to include chemical (\ref{rxn:methane} or nuclear (\ref{rxn:tritium}) reactions. This template has a custom environment to have a separate counter and present with a different label than mathematical expressions.
 
+\begin{reaction}\label{rxn:methane}
+    CH_4 + 2O_2 \to CO_2 + 2H_2O
+\end{reaction}
+
+\begin{reaction} \label{rxn:tritium}
+    ^{6}Li + n \to {^{3}H} + \alpha
+\end{reaction}
